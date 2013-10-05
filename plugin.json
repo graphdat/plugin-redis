@@ -1,0 +1,29 @@
+{
+	"description" : "Scans the given device mount paths and reports the one with the least free space",
+	"icon" : "icon.png",
+	"command" : "node index.js $(pollInterval) $(devices)",
+	"postExtract" : "npm install",
+	"ignore" : "node_modules",
+	"metrics" : ["DISKUSE_SUMMARY"],
+	"paramSchema" : [
+		{
+			"title" : "Port",
+			"name" : "port",
+			"description" : "The redis port.",
+			"type" : "integer",
+			"default" : 6379
+		},
+		{
+			"title" : "Host",
+			"name" : "host",
+			"description" : "The redis hostname.",
+			"type" : "string"
+		},
+		{
+			"title" : "Password",
+			"name" : "password",
+			"description" : "Password to the redis server.",
+			"type" : "password"
+		}
+	]
+}

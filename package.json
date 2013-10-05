@@ -1,0 +1,11 @@
+{
+	"name": "diskuse_summary.graphdat.plugin",
+	"version": "0.0.1",
+	"title": "Redis plugin for Graphat",
+	"main": "index.js",
+	"private": true,
+	"dependencies": {
+		"redis" : "0.8.6"
+	},
+	"engine": "node >= 0.8.1"
+}
