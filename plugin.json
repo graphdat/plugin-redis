@@ -8,6 +8,12 @@
 				 "REDIS_CONNECTIONS_RECEIVED", "REDIS_COMMANDS_PROCESSED", "REDIS_USED_MEMORY"],
 	"paramSchema" : [
 		{
+			"title" : "Source",
+			"name" : "source",
+			"description" : "The source to display in the legend for the REDIS data.",
+			"type" : "string"
+		},
+		{
 			"title" : "Port",
 			"name" : "port",
 			"description" : "The redis port.",
