@@ -1,7 +1,7 @@
 {
-	"description" : "Scans the given device mount paths and reports the one with the least free space",
+	"description" : "Displays important REDIS metrics",
 	"icon" : "icon.png",
-	"command" : "node index.js $(pollInterval) $(devices)",
+	"command" : "node index.js",
 	"postExtract" : "npm install",
 	"ignore" : "node_modules",
 	"metrics" : ["REDIS_CONNECTED_CLIENTS", "REDIS_KEY_HITS", "REDIS_KEY_MISSES", "REDIS_KEYS_EXPIRED", "REDIS_KEY_EVICTIONS",
