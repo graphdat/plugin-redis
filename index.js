@@ -52,7 +52,7 @@ function poll()
 		console.log('REDIS_KEY_HITS %d %s', accum(vals, 'keyspace_hits'), _param.source);
 		console.log('REDIS_KEY_MISSES %d %s', accum(vals, 'keyspace_misses'), _param.source);
 		console.log('REDIS_KEYS_EXPIRED %d %s', accum(vals, 'expired_keys'), _param.source);
-		console.log('REDIS_KEYS_EVICTED %d %s', accum(vals, 'evicted_keys'), _param.source);
+		console.log('REDIS_KEY_EVICTIONS %d %s', accum(vals, 'evicted_keys'), _param.source);
 		console.log('REDIS_COMMANDS_PROCESSED %d %s', accum(vals, 'total_commands_processed'), _param.source);
 		console.log('REDIS_CONNECTIONS_RECEIVED %d %s', accum(vals, 'total_connections_received'), _param.source);
 		console.log('REDIS_MEMORY_USED %d %s', vals.used_memory_rss, _param.source);
