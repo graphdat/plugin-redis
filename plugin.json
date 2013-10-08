@@ -4,8 +4,8 @@
 	"command" : "node index.js",
 	"postExtract" : "npm install",
 	"ignore" : "node_modules",
-	"metrics" : ["REDIS_CONNECTED_CLIENTS", "REDIS_KEY_HITS", "REDIS_KEY_MISSES", "REDIS_KEYS_EXPIRED", "REDIS_KEY_EVICTIONS",
-				 "REDIS_CONNECTIONS_RECEIVED", "REDIS_COMMANDS_PROCESSED", "REDIS_USED_MEMORY"],
+	"metrics" : [ "REDIS_CONNECTED_CLIENTS", "REDIS_KEY_HITS", "REDIS_KEY_MISSES", "REDIS_KEYS_EXPIRED", "REDIS_KEY_EVICTIONS",
+				 "REDIS_CONNECTIONS_RECEIVED", "REDIS_COMMANDS_PROCESSED", "REDIS_USED_MEMORY" ],
 	"paramSchema" : [
 		{
 			"title" : "Source",
