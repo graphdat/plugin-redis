@@ -48,14 +48,14 @@ function poll()
 		});
 
 		// Report
-		console.log('REDIS_CLIENTS %d', vals.connected_clients);
-		console.log('REDIS_KEY_HITS %d', accum(vals, 'keyspace_hits'));
-		console.log('REDIS_KEY_MISSES %d', accum(vals, 'keyspace_misses'));
-		console.log('REDIS_KEYS_EXPIRED %d', accum(vals, 'expired_keys'));
-		console.log('REDIS_KEYS_EVICTED %d', accum(vals, 'evicted_keys'));
-		console.log('REDIS_COMMANDS_PROCESSED %d', accum(vals, 'total_commands_processed'));
-		console.log('REDIS_CONNECTIONS_RECEIVED %d', accum(vals, 'total_connections_received'));
-		console.log('REDIS_MEMORY_USED %d', vals.used_memory_rss);
+		console.log('REDIS_CONNECTED_CLIENTS %d %s', vals.connected_clients, _param.source);
+		console.log('REDIS_KEY_HITS %d %s', accum(vals, 'keyspace_hits'), _param.source);
+		console.log('REDIS_KEY_MISSES %d %s', accum(vals, 'keyspace_misses'), _param.source);
+		console.log('REDIS_KEYS_EXPIRED %d %s', accum(vals, 'expired_keys'), _param.source);
+		console.log('REDIS_KEYS_EVICTED %d %s', accum(vals, 'evicted_keys'), _param.source);
+		console.log('REDIS_COMMANDS_PROCESSED %d %s', accum(vals, 'total_commands_processed'), _param.source);
+		console.log('REDIS_CONNECTIONS_RECEIVED %d %s', accum(vals, 'total_connections_received'), _param.source);
+		console.log('REDIS_MEMORY_USED %d %s', vals.used_memory_rss, _param.source);
 	});
 
 	setTimeout(poll, _pollInterval);
