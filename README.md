@@ -1,7 +1,7 @@
 
 ## REDIS Graphdat Plugin
 
-Tracks the following metrics for REDIS (from the info API):
+Tracks the following metrics for REDIS (from the REDIS "info" API):
 
 connected_clients
 keyspace_hits
