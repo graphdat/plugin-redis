@@ -1,5 +1,5 @@
 {
-	"name": "diskuse_summary.graphdat.plugin",
+	"name": "redis.graphdat.plugin",
 	"version": "0.0.1",
 	"title": "Redis plugin for Graphat",
 	"main": "index.js",

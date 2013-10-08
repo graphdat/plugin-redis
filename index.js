@@ -55,7 +55,7 @@ function poll()
 		console.log('REDIS_KEY_EVICTIONS %d %s', accum(vals, 'evicted_keys'), _param.source);
 		console.log('REDIS_COMMANDS_PROCESSED %d %s', accum(vals, 'total_commands_processed'), _param.source);
 		console.log('REDIS_CONNECTIONS_RECEIVED %d %s', accum(vals, 'total_connections_received'), _param.source);
-		console.log('REDIS_MEMORY_USED %d %s', vals.used_memory_rss, _param.source);
+		console.log('REDIS_USED_MEMORY %d %s', vals.used_memory_rss, _param.source);
 	});
 
 	setTimeout(poll, _pollInterval);
