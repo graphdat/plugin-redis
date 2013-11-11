@@ -1,6 +1,7 @@
 var _param = require('./param.json');
 var _os = require('os');
 var _redis = require('redis');
+var _tools = require('graphdat-plugin-tools');
 
 var _client = _redis.createClient(_param.port, _param.host);
 _client.auth(_param.password);
