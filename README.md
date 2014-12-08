@@ -1,14 +1,40 @@
+Boundary Redis Plugin
+---------------------
 
-## REDIS Graphdat Plugin
+Collects metrics from an instance of a Redis database.
 
-Tracks the following metrics for REDIS (from the REDIS "info" API):
+### Platforms
+- Windows
+- Linux
+- OS X
+- SmartOS
 
-* connected_clients
-* keyspace_hits
-* keyspace_misses
-* expired_keys
-* evicted_keys
-* total_commands_processed
-* total_connections_received
-* used_memory_rss
+### Prerequisites
+- node version 0.8.0 or later
+- npm version 1.4.21 or later
+
+### Plugin Setup
+
+None
+
+### Plugin Configuration Fields
+
+|Field Name|Description                                            |
+|:-------|:------------------------------------------------------|
+|Source  |The source to display in the legend for the REDIS data.|
+|Port    |The redis port.                                        |
+|Host    |The redis hostname.                                    |
+|Password|Password to the redis server.                          |
+
+### Metrics Collected
+|Metric Name               |Description|
+|:-------------------------|:|
+|Redis Connected Clients   ||
+|Redis Key Hits            ||
+|Redis Key Misses          ||
+|Redis Keys Expired        ||
+|Redis Key Evictions       ||
+|Redis Connections Received||
+|Redis Commands Processed  ||
+|Redis Used Memory         ||
 
