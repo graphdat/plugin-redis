@@ -3,23 +3,26 @@ Boundary Redis Plugin
 
 Collects metrics from an instance of a Redis database.
 
-### Platforms
-- Windows
-- Linux
-- OS X
-- SmartOS
-
 ### Prerequisites
-- node version 0.8.0 or later
-- npm version 1.4.21 or later
+
+|     OS    | Linux | Windows | SmartOS | OS X |
+|:----------|:-----:|:-------:|:-------:|:----:|
+| Supported |   v   |    v    |    v    |  v   |
+
+
+|  Runtime | node.js | Python | Java |
+|:---------|:-------:|:------:|:----:|
+| Required |    +    |        |      |
+
+- [How to install node.js?](https://help.boundary.com/hc/articles/202360701)
 
 ### Plugin Setup
 
 None
 
-### Plugin Configuration Fields
+#### Plugin Configuration Fields
 
-|Field Name|Description                                            |
+|Field Name|Description                                          |
 |:-------|:------------------------------------------------------|
 |Source  |The source to display in the legend for the REDIS data.|
 |Port    |The redis port.                                        |
@@ -37,4 +40,3 @@ None
 |Redis Connections Received||
 |Redis Commands Processed  ||
 |Redis Used Memory         ||
-
