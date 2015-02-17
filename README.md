@@ -47,12 +47,12 @@ None
 #### For All Versions
 
 |Metric Name               |Description|
-|:-------------------------|:|
-|Redis Connected Clients   ||
-|Redis Key Hits            ||
-|Redis Key Misses          ||
-|Redis Keys Expired        ||
-|Redis Key Evictions       ||
-|Redis Connections Received||
-|Redis Commands Processed  ||
-|Redis Used Memory         ||
+|:-------------------------|:----------|
+|Redis Connected Clients   |           |
+|Redis Key Hits            |           |
+|Redis Key Misses          |           |
+|Redis Keys Expired        |           |
+|Redis Key Evictions       |           |
+|Redis Connections Received|           |
+|Redis Commands Processed  |           |
+|Redis Used Memory         |           |
