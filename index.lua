@@ -6,8 +6,8 @@ local boundary = require('boundary')
 local utils = require('utils')
 local uv_native = require ('uv_native')
 
-local pollInterval = 10000;
-local port         = 80
+local pollInterval = 10000
+local port         = 6379
 local host         = "localhost"
 local source       = nil
 
