@@ -1,3 +1,7 @@
+-- [boundary.com] Redis Lua Plugin
+-- [author] Ivano Picco <ivano.piccopianobit.com>
+
+-- Requires.
 local redis = require('luvit-redis')
 local string= require('string')
 local split = require('split')
@@ -5,9 +9,11 @@ local split = require('split')
 local utils = require('utils')
 local uv_native = require ('uv_native')
 
+-- Configuration.
 local _param = require ('./param')
 _param.pollInterval = (_param.pollInterval>0) and _param.pollInterval or 10000;
 
+-- Client initialization
 local client = redis:new(_param.port, _param.host)
 
 client:on("error", function (err)
@@ -18,8 +24,11 @@ if (_param.password) then
   client:auth(_param.password) 
 end
 
+-- Back-trail.
 local previousValues={}
 local currentValues={}
+
+-- Get difference between current and previous value.
 function diffvalues(name)
   local cur  = currentValues[name]
   local last = previousValues[name] or cur
@@ -27,6 +36,7 @@ function diffvalues(name)
   return  (cur - last)
 end
 
+-- Parse line (i.e. line: "connected_clients : <value>").
 function parseEachLine(line)
   local t = split(line,':')
   if (#t == 2) then
@@ -34,6 +44,7 @@ function parseEachLine(line)
   end
 end
 
+-- Get current values.
 function poll()
   client:info( function(err,result)
     if (err) then 
@@ -56,6 +67,7 @@ function poll()
   end)
 end
 
+-- Ready, go.
 poll()
 local timer = require('timer')
 timer.setInterval(_param.pollInterval,poll)
