@@ -1,12 +1,19 @@
 {
-	"name": "redis.graphdat.plugin",
-	"version": "0.0.1",
-	"title": "Redis plugin for Graphat",
-	"main": "index.js",
-	"private": true,
-	"dependencies": {
-		"graphdat-plugin-tools" : "0.0.1",
-		"redis" : "0.8.6"
-	},
-	"engine": "node >= 0.8.1"
+  "name": "plugin-redis",
+  "version": "0.0.1",
+  "description": "Redis plugin for Graphdat",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "graphdat-plugin-tools" : "0.0.1",
+    "redis" : "0.8.6"
+  },
+  "keywords": [
+    "graphdat",
+    "plugin",
+    "redis"
+  ],
+  "author": "Ivano Picco <ivano.picco@pianobit.com>",
+  "license": "Apache v2",
+  "engine": "node >= 0.8.1"
 }
