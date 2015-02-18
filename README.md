@@ -20,7 +20,7 @@ Collects metrics from an instance of a Redis database.
 
 |  Runtime | node.js | Python | Java |
 |:---------|:-------:|:------:|:----:|
-| Required |    +    |        |      |
+| Required |    v    |        |      |
 
 - [How to install node.js?](https://help.boundary.com/hc/articles/202360701)
 

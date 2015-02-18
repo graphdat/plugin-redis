@@ -1,0 +1,7 @@
+{
+  "pollInterval": 5000,
+  "port" : null,
+  "host" : null,
+  "password" : null,
+  "source" : null
+}
